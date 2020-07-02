@@ -1,0 +1,251 @@
+body {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: auto;
+    margin: 0;
+}
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+
+.container > div {
+    margin: 0px 0px 3% 0px;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 12vw;
+    text-align: center;
+    background-image: url(images/bg-header-desktop.png);
+}
+
+.header > img {
+    width: 8%;
+    height: auto;
+}
+
+.text-info {
+    width: 45%;
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+.button.button {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 40%;
+    margin-bottom: 10%;
+}
+
+.button button {
+    font-size: 1vw;
+    color: white;
+    width: 40%;
+    height: 3vw;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+
+}
+
+.button button:active{
+    transform: translateY(1px);
+}
+
+.button button:first-child {
+    background-color: hsl(171, 66%, 44%);
+    box-shadow: 0px 3px hsl(171, 77%, 14%);
+    cursor: pointer;
+
+}
+
+.button button:last-child {
+    background-color: hsl(233, 100%, 69%);
+    box-shadow: 0px 3px hsl(233, 67%, 15%);
+    cursor: pointer;
+
+}
+
+.text-image {
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    height: auto;
+}
+
+.text-image > .text-info {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: auto;
+    text-align: start;
+    margin-left: 5%;
+}
+
+.image-computer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    height: auto;
+}
+
+.image-computer > img {
+    width: 100%;
+    height: auto;
+}
+
+.image-devices {
+    width: 50%;
+    height: auto;
+}
+.image-devices > img {
+    width: 100%;
+    height: auto;
+}
+
+.icon-container {
+    display: flex;
+    width: 80%;
+}
+
+.icon-container .text-info img {
+    width: 20%;
+    height: auto;
+}
+
+.logo-container.logo-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+    margin: 10% auto;
+}
+
+.logo-container > img {
+    width: 15%;
+    height: auto;
+}
+
+.footer {
+    display: flex;
+    width: 100%;
+    height: 10vw;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url(images/bg-header-desktop.png);
+    margin-bottom: 0 !important;
+}
+
+.icon > img{
+    width: 10px;
+    height: auto;
+}
+
+.f-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+    height: auto;
+}
+.f-image> img {
+    width: 50%;
+}
+
+.f-icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 20%;
+}
+
+.f-icon> img {
+    width: 15%;
+}
+
+.f-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    font-size: 1.5vw;
+}
+.f-text > div {
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width:600px){
+    .button.button {
+        flex-direction: column;
+    }
+
+    .button button {
+        margin: 2%;
+    }
+
+    .text-image {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .text-image > .text-info {
+        text-align: center;
+    }
+
+    .icon-container {
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .icon-container > .text-info {
+        margin: 3%;
+    }
+
+    .logo-container.logo-container {
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .logo-container > img {
+        margin: 3%;
+    }
+    
+    .footer {
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: auto;
+    }
+
+    .footer>div {
+        margin: 3%;
+    }
+
+    .f-text {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .f-text > div {
+        margin: 3%;
+    }
+
+    .text-info {
+        font-size: 2.5vw;
+    }
+}
