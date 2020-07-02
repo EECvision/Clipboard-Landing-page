@@ -186,7 +186,7 @@ body {
     height: auto;
 }
 
-@media only screen and (max-width:600px){
+@media only screen and (max-width:375px){
     .button.button {
         flex-direction: column;
     }
